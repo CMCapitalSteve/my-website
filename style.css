@@ -1,35 +1,172 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Inter', sans-serif; color: #fff; background: #5c5cff; line-height: 1.6; font-weight: 300; }
-.container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-.section { padding: 5rem 0; }
-.navbar { background: #fff; display: flex; align-items: center; padding: 1rem 2rem; position: fixed; width: 100%; z-index: 1000; box-shadow: 0 1px 0 #5c5cff; }
-.nav-logo { font-size: 1.5rem; color: #6b5b95; font-weight: 700; }
-.nav-links { list-style: none; display: flex; gap: 1.5rem; margin-left: 2rem; }
-.nav-links a { color: #6b5b95; text-decoration: none; font-weight: 300; }
-.nav-btn { background: #5c5cff; color: #fff; padding: 0.5rem 1.5rem; border-radius: 5px; text-decoration: none; margin-left: auto; font-weight: 300; }
-.hero-content { display: flex; align-items: center; gap: 3rem; justify-content: center; }
-.ftmo-card { width: 30%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
-.hero-text { text-align: center; }
-.hero-text h1 { font-size: 2.5rem; font-weight: 300; }
-.hero-text p { font-size: 1.2rem; margin-bottom: 1rem; }
-.chart-card { width: 40%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); margin-top: 1rem; }
-.about-content { display: flex; gap: 2rem; align-items: center; }
-.about-text { width: 50%; }
-.about-logo { width: 40%; }
-.services-grid { display: flex; gap: 2rem; justify-content: center; }
-.service-card { background: #fff; color: #5c5cff; padding: 1.5rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); width: 25%; text-align: left; }
-.card-icon { width: 60px; border-radius: 50%; margin-bottom: 1rem; }
-.badge { background: #fff; color: #5c5cff; padding: 0.3rem 1rem; border-radius: 20px; font-size: 0.8rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: relative; top: -1.5rem; left: 60%; }
-.service-card h3 { font-size: 1.2rem; margin-bottom: 1rem; }
-.service-card ul { list-style: disc; padding-left: 1.5rem; font-size: 0.9rem; margin-bottom: 1rem; }
-.price { font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; }
-.price span { font-size: 1rem; font-weight: 300; }
-.service-logo-card { background: #fff; padding: 1.5rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); width: 25%; text-align: center; }
-.large-logo { width: 100%; }
-.contact-content { display: flex; gap: 2rem; align-items: center; justify-content: center; }
-.contact-form { width: 40%; }
-.contact-form label { display: block; margin-bottom: 0.5rem; font-size: 1rem; }
-.contact-form input, .contact-form textarea { width: 100%; padding: 0.5rem; border: none; border-radius: 5px; margin-bottom: 1rem; }
-.contact-form button { width: 100%; background: #fff; color: #5c5cff; padding: 0.5rem; border-radius: 20px; border: none; font-weight: 300; cursor: pointer; }
-.social-icons { display: flex; gap: 1rem; justify-content: center; margin-top: 2rem; font-size: 1.5rem; }
-@media (max-width: 768px) { .hero-content, .about-content, .services-grid { flex-direction: column; } .service-card, .contact-form { width: 90%; } .badge { left: 0; } }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  color: #333;
+  background: #f8f9fa;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.navbar {
+  background: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-logo {
+  width: 120px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin-left: 2rem;
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.nav-btn {
+  background: #5c5cff;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-left: auto;
+}
+
+.hero {
+  background: #5c5cff;
+  color: #fff;
+  text-align: center;
+  padding: 8rem 0;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background: #fff;
+  color: #5c5cff;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.services-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.service-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 30%;
+  text-align: center;
+}
+
+.service-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form label {
+  font-weight: 600;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background: #5c5cff;
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    flex-direction: column;
+  }
+  .service-card {
+    width: 100%;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
