@@ -5,82 +5,116 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>C|M Capital</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Navigation -->
   <nav class="navbar">
-    <img src="Untitled_Artwork.PNG" alt="C|M Capital Logo" class="nav-logo" />
+    <div class="nav-logo">C|M CAPITAL</div>
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
+      <li><a href="#about">About Us</a></li>
       <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact">Contact Us</a></li>
     </ul>
+    <a href="#contact" class="nav-btn">Get Started</a>
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero" id="home">
+  <section class="section hero" id="home">
     <div class="container">
-      <h1>Trading Made Simple <span class="dot">.</span></h1>
-      <a href="#contact" class="btn">Get Started</a>
+      <div class="hero-content">
+        <img src="ftmo-card.jpg" alt="Passed FTMO Challenge" class="ftmo-card" />
+        <div class="hero-text">
+          <h1>Trading Made Simple.</h1>
+          <p>Get started today!</p>
+          <img src="chart-card.jpg" alt="Trading Chart" class="chart-card" />
+          <a href="#services" class="btn">View Pricing</a>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- About Section -->
-  <section class="about" id="about">
+  <section class="section about" id="about">
     <div class="container">
-      <h2>About C|M Capital</h2>
-      <p>We make trading and capital management straightforward and effective for individuals and businesses. With years of experience, we focus on simplicity and results.</p>
-      <img src="IMG_0390.JPG" alt="About Image" class="section-img" />
+      <h2>About Us</h2>
+      <h3>C|M Capital</h3>
+      <h4>Where Trading Meets A Simplified Edge.</h4>
+      <p>At C|M Capital, we are committed to providing the highest quality trading education and support. Our founder, Steve Cutmore, has spent over nine years mastering the art of trading and now brings his expertise to our academy and Discord service.</p>
+      <p>We believe that trading should be accessible to everyone, regardless of their experience level. That's why we have designed our programs to cater to both beginners and seasoned traders alike. Our team of experts is dedicated to helping you achieve your trading goals and become a successful trader.</p>
+      <p>At C|M Capital, we pride ourselves on our innovative approach to trading education. We combine cutting-edge strategies with practical, hands-on training to give you the tools you need to succeed in the markets. Join us at C|M Capital and start your journey towards trading excellence today!</p>
+      <img src="Untitled_Artwork.PNG" alt="C|M Capital Logo" class="about-logo" />
+      <div class="social-icons">
+        <a href="#">&bull;</a>
+        <a href="#">&bull;</a>
+        <a href="#">&bull;</a>
+      </div>
     </div>
   </section>
 
   <!-- Services Section -->
-  <section class="services" id="services">
+  <section class="section services" id="services">
     <div class="container">
       <h2>Our Services</h2>
       <div class="services-grid">
         <div class="service-card">
-          <h3>Trading Strategies</h3>
-          <p>Custom plans to optimize your trades and maximize returns.</p>
-          <a href="#contact" class="btn-small">Learn More</a>
+          <img src="Untitled_Artwork.PNG" alt="C|M Logo" class="card-icon" />
+          <h3>Academy</h3>
+          <ul>
+            <li>[Full Strategy] Swing & Day Trading</li>
+            <li>[Live Webinars]</li>
+            <li>Lifetime Access To Discord Community</li>
+            <li>24/7 Support</li>
+            <li>C|M Team Recourses</li>
+            <li>Private Academy & Crypto Community</li>
+            <li>Traders Recap Videos</li>
+          </ul>
+          <p class="price">£500 <span>One-Time Fee</span></p>
+          <a href="#" class="btn">Join Now</a>
+        </div>
+        <div class="service-logo-card">
+          <img src="Untitled_Artwork.PNG" alt="C M Logo" class="large-logo" />
         </div>
         <div class="service-card">
-          <h3>Risk Management</h3>
-          <p>Advanced tools to protect your investments from market volatility.</p>
-          <a href="#contact" class="btn-small">Learn More</a>
-        </div>
-        <div class="service-card">
-          <h3>Advisory Services</h3>
-          <p>Expert guidance tailored to your financial goals.</p>
-          <a href="#contact" class="btn-small">Learn More</a>
+          <img src="discord-icon.png" alt="Discord Icon" class="card-icon" />
+          <span class="badge">Best Seller</span>
+          <h3>Discord Community</h3>
+          <ul>
+            <li>Weekly Market Breakdowns & Updates</li>
+            <li>Community Trade Ideas</li>
+            <li>Accountability (Wins & Loss Channels)</li>
+            <li>Live Mentors Charts & Updates</li>
+            <li>A FREE Trading Journal</li>
+            <li>Full C|M Community Chat</li>
+          </ul>
+          <p class="price">£15 / Month</p>
+          <a href="#" class="btn">Join Now</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section class="contact" id="contact">
+  <section class="section contact" id="contact">
     <div class="container">
-      <h2>Contact Us</h2>
-      <p>Email: info@cmcapital.com | Phone: (123) 456-7890</p>
       <form class="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email</label>
+        <input type="email" />
+        <label>Message</label>
+        <textarea></textarea>
         <button type="submit" class="btn">Send</button>
       </form>
+      <h3>Get in Touch</h3>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2023 C|M Capital. All rights reserved.</p>
-  </footer>
-
   <script>
-    // Smooth scroll
+    // Smooth scroll for nav links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
         e.preventDefault();
