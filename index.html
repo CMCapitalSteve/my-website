@@ -28,23 +28,27 @@
         <div class="hero-text">
           <h1>Trading Made Simple.</h1>
           <p>Get started today!</p>
-          <img src="chart-card.jpg" alt="Trading Chart" class="chart-card" />
           <a href="#services" class="btn">View Pricing</a>
+          <img src="chart-card.jpg" alt="Trading Chart" class="chart-card" />
         </div>
       </div>
-    </div>
+  </div>
   </section>
 
   <!-- About Section -->
   <section class="section about" id="about">
     <div class="container">
       <h2>About Us</h2>
-      <h3>C|M Capital</h3>
-      <h4>Where Trading Meets A Simplified Edge.</h4>
-      <p>At C|M Capital, we are committed to providing the highest quality trading education and support. Our founder, Steve Cutmore, has spent over nine years mastering the art of trading and now brings his expertise to our academy and Discord service.</p>
-      <p>We believe that trading should be accessible to everyone, regardless of their experience level. That's why we have designed our programs to cater to both beginners and seasoned traders alike. Our team of experts is dedicated to helping you achieve your trading goals and become a successful trader.</p>
-      <p>At C|M Capital, we pride ourselves on our innovative approach to trading education. We combine cutting-edge strategies with practical, hands-on training to give you the tools you need to succeed in the markets. Join us at C|M Capital and start your journey towards trading excellence today!</p>
-      <img src="Untitled_Artwork.PNG" alt="C|M Capital Logo" class="about-logo" />
+      <div class="about-content">
+        <div class="about-text">
+          <h3>C|M Capital</h3>
+          <h4>Where Trading Meets A Simplified Edge.</h4>
+          <p>At C|M Capital, we are committed to providing the highest quality trading education and support. Our founder, Steve Cutmore, has spent over nine years mastering the art of trading and now brings his expertise to our academy and Discord service.</p>
+          <p>We believe that trading should be accessible to everyone, regardless of their experience level. That's why we have designed our programs to cater to both beginners and seasoned traders alike. Our team of experts is dedicated to helping you achieve your trading goals and become a successful trader.</p>
+          <p>At C|M Capital, we pride ourselves on our innovative approach to trading education. We combine cutting-edge strategies with practical, hands-on training to give you the tools you need to succeed in the markets. Join us at C|M Capital and start your journey towards trading excellence today!</p>
+        </div>
+        <img src="Untitled_Artwork.PNG" alt="C|M Capital Logo" class="about-logo" />
+      </div>
       <div class="social-icons">
         <a href="#">&bull;</a>
         <a href="#">&bull;</a>
@@ -98,23 +102,24 @@
   <!-- Contact Section -->
   <section class="section contact" id="contact">
     <div class="container">
-      <form class="contact-form">
-        <label>First Name</label>
-        <input type="text" />
-        <label>Last Name</label>
-        <input type="text" />
-        <label>Email</label>
-        <input type="email" />
-        <label>Message</label>
-        <textarea></textarea>
-        <button type="submit" class="btn">Send</button>
-      </form>
-      <h3>Get in Touch</h3>
+      <div class="contact-content">
+        <form class="contact-form">
+          <label>First Name</label>
+          <input type="text" />
+          <label>Last Name</label>
+          <input type="text" />
+          <label>Email</label>
+          <input type="email" />
+          <label>Message</label>
+          <textarea></textarea>
+          <button type="submit" class="btn">Send</button>
+        </form>
+        <h3>Get in Touch</h3>
+      </div>
     </div>
   </section>
 
   <script>
-    // Smooth scroll for nav links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
         e.preventDefault();
