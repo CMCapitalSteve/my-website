@@ -8,26 +8,85 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <section class="hero" id="top">
+  <!-- Navigation -->
+  <nav class="navbar">
+    <img src="Untitled_Artwork.PNG" alt="C|M Capital Logo" class="nav-logo" />
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
     <div class="container">
-      <img src="Untitled_Artwork.PNG" alt="C|M Capital Logo" class="logo" />
       <h1>Trading Made Simple <span class="dot">.</span></h1>
-      <div class="scroll-links">
-        <a href="#top" class="scroll-link">top of page</a>
-        <a href="#bottom" class="scroll-link">bottom of page</a>
+      <a href="#contact" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2>About C|M Capital</h2>
+      <p>We make trading and capital management straightforward and effective for individuals and businesses. With years of experience, we focus on simplicity and results.</p>
+      <img src="IMG_0390.JPG" alt="About Image" class="section-img" />
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Trading Strategies</h3>
+          <p>Custom plans to optimize your trades and maximize returns.</p>
+          <a href="#contact" class="btn-small">Learn More</a>
+        </div>
+        <div class="service-card">
+          <h3>Risk Management</h3>
+          <p>Advanced tools to protect your investments from market volatility.</p>
+          <a href="#contact" class="btn-small">Learn More</a>
+        </div>
+        <div class="service-card">
+          <h3>Advisory Services</h3>
+          <p>Expert guidance tailored to your financial goals.</p>
+          <a href="#contact" class="btn-small">Learn More</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <div id="bottom" class="bottom-anchor"></div>
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Email: info@cmcapital.com | Phone: (123) 456-7890</p>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2023 C|M Capital. All rights reserved.</p>
+  </footer>
 
   <script>
-    document.querySelectorAll('.scroll-link').forEach(link => {
-      link.addEventListener('click', e => {
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
         e.preventDefault();
-        const target = link.getAttribute('href');
-        const top = target === '#top' ? 0 : document.documentElement.scrollHeight;
-        window.scrollTo({ top, behavior: 'smooth' });
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
       });
     });
   </script>
