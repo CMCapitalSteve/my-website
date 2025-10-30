@@ -5,10 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>C|M Capital</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Navigation -->
   <nav class="navbar">
     <div class="nav-logo">C|M CAPITAL</div>
     <ul class="nav-links">
@@ -20,22 +19,20 @@
     <a href="#contact" class="nav-btn">Get Started</a>
   </nav>
 
-  <!-- Hero Section -->
   <section id="home" class="section hero">
     <div class="container">
       <div class="hero-content">
-        <img src="ftmo-card.jpg" alt="Passed FTMO Challenge" class="ftmo-card">
+        <img src="ftmo-card.jpg" alt="FTMO Challenge">
         <div class="hero-text">
           <h1>Trading Made Simple.</h1>
           <p>Get started today!</p>
           <a href="#services" class="btn">View Pricing</a>
-          <img src="chart-card.jpg" alt="Trading Chart" class="chart-card">
+          <img src="chart-card.jpg" alt="Chart">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
   <section id="about" class="section about">
     <div class="container">
       <h2>About Us</h2>
@@ -47,7 +44,7 @@
           <p>We believe that trading should be accessible to everyone, regardless of their experience level. That's why we have designed our programs to cater to both beginners and seasoned traders alike. Our team of experts is dedicated to helping you achieve your trading goals and become a successful trader.</p>
           <p>At C|M Capital, we pride ourselves on our innovative approach to trading education. We combine cutting-edge strategies with practical, hands-on training to give you the tools you need to succeed in the markets. Join us at C|M Capital and start your journey towards trading excellence today!</p>
         </div>
-        <img src="Untitled_Artwork.PNG" alt="C|M Capital Logo" class="about-logo">
+        <img src="Untitled_Artwork.PNG" alt="Logo">
       </div>
       <div class="social-icons">
         <a href="#">•</a>
@@ -57,13 +54,12 @@
     </div>
   </section>
 
-  <!-- Services Section -->
   <section id="services" class="section services">
     <div class="container">
       <h2>Our Services</h2>
       <div class="services-grid">
         <div class="service-card">
-          <img src="Untitled_Artwork.PNG" alt="Academy Icon" class="card-icon">
+          <img src="Untitled_Artwork.PNG" alt="Academy">
           <h3>Academy</h3>
           <ul>
             <li>[Full Strategy] Swing & Day Trading</li>
@@ -74,14 +70,14 @@
             <li>Private Academy & Crypto Community</li>
             <li>Traders Recap Videos</li>
           </ul>
-          <p class="price">£500 <span>One-Time Fee</span></p>
+          <p class="price">£500 One-Time Fee</p>
           <a href="#" class="btn">Join Now</a>
         </div>
         <div class="service-logo-card">
-          <img src="Untitled_Artwork.PNG" alt="C M Logo" class="large-logo">
+          <img src="Untitled_Artwork.PNG" alt="C M">
         </div>
         <div class="service-card">
-          <img src="discord-icon.png" alt="Discord Icon" class="card-icon">
+          <img src="discord-icon.png" alt="Discord">
           <span class="badge">Best Seller</span>
           <h3>Discord Community</h3>
           <ul>
@@ -99,11 +95,9 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
   <section id="contact" class="section contact">
     <div class="container">
       <div class="contact-content">
-        <h3>Get in Touch</h3>
         <form class="contact-form">
           <label>First Name</label>
           <input type="text">
@@ -115,13 +109,14 @@
           <textarea></textarea>
           <button type="submit" class="btn">Send</button>
         </form>
+        <h3>Get in Touch</h3>
       </div>
     </div>
   </section>
 
   <script>
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
+      anchor.addEventListener('click', function (e) {
         e.preventDefault();
         document.querySelector(this.getAttribute('href')).scrollIntoView({
           behavior: 'smooth'
